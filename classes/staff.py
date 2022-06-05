@@ -9,7 +9,7 @@ class Staff(Person):
 
     def all_staff():
         staff_list=[]
-        with open('/Users/huntermcreynolds/code/exercises/oop-school-interface-i/data/staff.csv') as f :
+        with open('/Users/huntermcreynolds/code/exercises/Week2/oop-school-interface-i/data/staff.csv') as f :
             staff_reader = csv.DictReader(f,skipinitialspace=True)
             for row in staff_reader:
                 staff_list.append(row)
